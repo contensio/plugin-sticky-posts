@@ -1,0 +1,1 @@
+{"name":"Sticky Posts","slug":"sticky-posts","version":"1.0.0","description":"Lets admins pin posts to the top of archive and homepage listings. Stored in content_meta.","author":"Contensio","author_url":"https://contensio.com","requires_contensio":"2.0.0","provider":"Contensio\\Plugins\\StickyPosts\\StickyPostsServiceProvider"}
