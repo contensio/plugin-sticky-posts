@@ -4,7 +4,7 @@
     "description": "Lets admins pin posts to the top of archive and homepage listings. Stored in content_meta.",
     "author": "Contensio",
     "author_url": "https://contensio.com",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "provider": "Contensio\\Plugins\\StickyPosts\\StickyPostsServiceProvider",
     "autoload": {
         "psr-4": {

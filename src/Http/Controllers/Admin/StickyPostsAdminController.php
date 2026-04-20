@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Sticky Posts — Contensio plugin.
+ * Sticky Posts - Contensio plugin.
  * https://contensio.com
  *
  * @copyright   Copyright (c) 2026 Iosif Gabriel Chimilevschi
@@ -35,7 +35,7 @@ class StickyPostsAdminController extends Controller
                 ];
             });
 
-        return view('sticky-posts::admin.index', compact('items'));
+        return view('contensio-sticky-posts::admin.index', compact('items'));
     }
 
     /**

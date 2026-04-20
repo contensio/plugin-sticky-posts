@@ -1,13 +1,13 @@
 # Sticky Posts
 
-Pin posts to the top of archive and homepage listings. Sticky posts always appear before other posts regardless of publish date. Managed from a dedicated admin page — no code editing required.
+Pin posts to the top of archive and homepage listings. Sticky posts always appear before other posts regardless of publish date. Managed from a dedicated admin page - no code editing required.
 
 **Features:**
 - Pin or unpin any published post from the admin settings page
 - Pinned posts flagged with a star icon in the admin list
 - Dashboard quick-action badge shows the count of currently pinned posts
-- `StickyHelper::stickyIds()` returns all pinned IDs — ready to use in any theme query
-- Stored in the core `content_meta` table — no migrations required
+- `StickyHelper::stickyIds()` returns all pinned IDs - ready to use in any theme query
+- Stored in the core `content_meta` table - no migrations required
 - Settings hub card in Admin > Settings
 
 ---

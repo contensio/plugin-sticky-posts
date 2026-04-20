@@ -54,14 +54,14 @@
 
         {{-- Toggle --}}
         @if($item['sticky'])
-        <form method="POST" action="{{ route('sticky-posts.unpin', $item['id']) }}" class="shrink-0">
+        <form method="POST" action="{{ route('contensio-sticky-posts.unpin', $item['id']) }}" class="shrink-0">
             @csrf
             <button type="submit" class="text-sm text-amber-600 hover:text-red-600 font-medium transition-colors px-3 py-1.5 rounded-lg border border-amber-200 hover:border-red-200 bg-amber-50 hover:bg-red-50">
                 Unpin
             </button>
         </form>
         @else
-        <form method="POST" action="{{ route('sticky-posts.pin', $item['id']) }}" class="shrink-0">
+        <form method="POST" action="{{ route('contensio-sticky-posts.pin', $item['id']) }}" class="shrink-0">
             @csrf
             <button type="submit" class="text-sm text-gray-500 hover:text-gray-700 font-medium transition-colors px-3 py-1.5 rounded-lg border border-gray-200 hover:border-gray-300 bg-white hover:bg-gray-50">
                 Pin to top

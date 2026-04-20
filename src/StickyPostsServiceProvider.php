@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Sticky Posts — Contensio plugin.
+ * Sticky Posts - Contensio plugin.
  * https://contensio.com
  *
  * @copyright   Copyright (c) 2026 Iosif Gabriel Chimilevschi
@@ -17,17 +17,19 @@ use Illuminate\Support\ServiceProvider;
 
 class StickyPostsServiceProvider extends ServiceProvider
 {
+    protected string $ns = 'contensio-sticky-posts';
+
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'sticky-posts');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', $this->ns);
 
         $this->registerRoutes();
 
         Hook::add('contensio/admin/settings-cards', function (): string {
-            return view('sticky-posts::partials.settings-hub-card')->render();
+            return view($this->ns . '::partials.settings-hub-card')->render();
         });
 
-        // Dashboard quick-action badge — shows the count of pinned posts
+        // Dashboard quick-action badge - shows the count of pinned posts
         Hook::add('contensio/admin/dashboard-quick-actions', function (): string {
             try {
                 $count = count(StickyHelper::stickyIds());
